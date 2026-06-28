@@ -1,0 +1,140 @@
+<svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eef9ee"/>
+      <stop offset="100%" stop-color="#dff2e0"/>
+    </linearGradient>
+    <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3fa66a"/>
+      <stop offset="100%" stop-color="#2c8c54"/>
+    </linearGradient>
+    <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f7a4a"/>
+      <stop offset="100%" stop-color="#136638"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f8a4c"/>
+      <stop offset="100%" stop-color="#136638"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1000" height="800" fill="url(#sky)"/>
+
+  <!-- sun -->
+  <circle cx="830" cy="150" r="70" fill="#fcd86b"/>
+  <g stroke="#fcd86b" stroke-width="6" stroke-linecap="round">
+    <line x1="830" y1="40" x2="830" y2="10"/>
+    <line x1="920" y1="80" x2="945" y2="60"/>
+    <line x1="950" y1="150" x2="980" y2="150"/>
+    <line x1="920" y1="220" x2="945" y2="240"/>
+  </g>
+
+  <!-- floating leaf accents -->
+  <g fill="#7fd99a" opacity="0.7">
+    <ellipse cx="130" cy="120" rx="20" ry="11" transform="rotate(30 130 120)"/>
+    <ellipse cx="190" cy="90" rx="14" ry="8" transform="rotate(-15 190 90)"/>
+  </g>
+
+  <!-- back hills -->
+  <path d="M0,560 Q250,460 500,540 T1000,520 L1000,800 L0,800 Z" fill="url(#hill1)" opacity="0.55"/>
+  <!-- front field -->
+  <path d="M0,610 Q260,520 520,600 T1000,580 L1000,800 L0,800 Z" fill="url(#hill2)"/>
+
+  <!-- crop rows -->
+  <g stroke="#0f5a30" stroke-width="3" opacity="0.5">
+    <path d="M0,700 Q500,660 1000,700" fill="none"/>
+    <path d="M0,740 Q500,700 1000,740" fill="none"/>
+    <path d="M0,775 Q500,740 1000,775" fill="none"/>
+  </g>
+
+  <!-- wheat stalks left & right -->
+  <g fill="#f4b942">
+    <g transform="translate(80,640)">
+      <line x1="0" y1="0" x2="0" y2="90" stroke="#3a7d3c" stroke-width="4"/>
+      <ellipse cx="0" cy="-5" rx="6" ry="14"/>
+      <ellipse cx="-8" cy="5" rx="5" ry="12" transform="rotate(-25 -8 5)"/>
+      <ellipse cx="8" cy="5" rx="5" ry="12" transform="rotate(25 8 5)"/>
+    </g>
+    <g transform="translate(120,660)">
+      <line x1="0" y1="0" x2="0" y2="80" stroke="#3a7d3c" stroke-width="4"/>
+      <ellipse cx="0" cy="-5" rx="6" ry="13"/>
+      <ellipse cx="-7" cy="5" rx="5" ry="11" transform="rotate(-25 -7 5)"/>
+      <ellipse cx="7" cy="5" rx="5" ry="11" transform="rotate(25 7 5)"/>
+    </g>
+    <g transform="translate(880,650)">
+      <line x1="0" y1="0" x2="0" y2="85" stroke="#3a7d3c" stroke-width="4"/>
+      <ellipse cx="0" cy="-5" rx="6" ry="13"/>
+      <ellipse cx="-7" cy="5" rx="5" ry="11" transform="rotate(-25 -7 5)"/>
+      <ellipse cx="7" cy="5" rx="5" ry="11" transform="rotate(25 7 5)"/>
+    </g>
+    <g transform="translate(920,670)">
+      <line x1="0" y1="0" x2="0" y2="75" stroke="#3a7d3c" stroke-width="4"/>
+      <ellipse cx="0" cy="-5" rx="6" ry="12"/>
+      <ellipse cx="-6" cy="5" rx="5" ry="10" transform="rotate(-25 -6 5)"/>
+      <ellipse cx="6" cy="5" rx="5" ry="10" transform="rotate(25 6 5)"/>
+    </g>
+  </g>
+
+  <!-- FARMER FIGURE -->
+  <g transform="translate(420,300)">
+    <!-- shadow -->
+    <ellipse cx="80" cy="430" rx="110" ry="20" fill="#0f5a30" opacity="0.25"/>
+
+    <!-- legs -->
+    <rect x="35" y="300" width="40" height="130" rx="16" fill="#5a3b22"/>
+    <rect x="90" y="300" width="40" height="130" rx="16" fill="#6b4628"/>
+    <!-- shoes -->
+    <ellipse cx="50" cy="432" rx="28" ry="14" fill="#2b1d10"/>
+    <ellipse cx="115" cy="432" rx="28" ry="14" fill="#23170c"/>
+
+    <!-- body / kurta -->
+    <path d="M20,180 Q15,260 35,310 L130,310 Q150,260 145,180 Q140,140 82,135 Q25,140 20,180 Z" fill="url(#shirt)"/>
+    <!-- shirt fold lines -->
+    <path d="M82,140 L82,300" stroke="#0f5a30" stroke-width="3" opacity="0.4"/>
+
+    <!-- left arm raised holding phone -->
+    <path d="M30,190 Q-30,170 -55,95" stroke="url(#shirt)" stroke-width="34" stroke-linecap="round" fill="none"/>
+    <circle cx="-55" cy="90" r="20" fill="#caa172"/>
+
+    <!-- phone with sound waves (voice assistant theme) -->
+    <g transform="translate(-95,55) rotate(-15)">
+      <rect x="0" y="0" width="46" height="78" rx="10" fill="#16181c"/>
+      <rect x="5" y="8" width="36" height="58" rx="4" fill="#1f8a4c"/>
+      <circle cx="23" cy="70" r="3" fill="#cfe9d8"/>
+    </g>
+    <g stroke="#1f8a4c" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85">
+      <path d="M-115,40 Q-128,55 -115,70"/>
+      <path d="M-126,28 Q-146,55 -126,82"/>
+    </g>
+
+    <!-- right arm down -->
+    <path d="M135,190 Q175,230 165,290" stroke="url(#shirt)" stroke-width="34" stroke-linecap="round" fill="none"/>
+    <circle cx="166" cy="294" r="20" fill="#caa172"/>
+
+    <!-- neck -->
+    <rect x="68" y="120" width="28" height="30" fill="#caa172"/>
+
+    <!-- head -->
+    <circle cx="82" cy="95" r="48" fill="#d9aa78"/>
+
+    <!-- simple facial features -->
+    <circle cx="66" cy="92" r="4.5" fill="#2b1d10"/>
+    <circle cx="98" cy="92" r="4.5" fill="#2b1d10"/>
+    <path d="M68,112 Q82,122 96,112" stroke="#5a3b22" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+    <!-- mustache -->
+    <path d="M62,104 Q82,114 102,104" stroke="#3a261a" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+    <!-- turban / farmer headwrap -->
+    <path d="M30,85 Q40,30 82,28 Q124,30 134,85 Q124,60 82,58 Q40,60 30,85 Z" fill="#e0703a"/>
+    <path d="M30,85 Q82,100 134,85 Q124,70 82,72 Q40,70 30,85 Z" fill="#c85a2c"/>
+    <ellipse cx="40" cy="60" rx="10" ry="16" fill="#e0703a" transform="rotate(-30 40 60)"/>
+  </g>
+
+  <!-- small leaf badge near farmer -->
+  <g transform="translate(560,250)">
+    <circle cx="0" cy="0" r="26" fill="#ffffff" opacity="0.9"/>
+    <path d="M-10,8 Q-12,-10 6,-14 Q14,2 -10,8 Z" fill="#1f8a4c"/>
+  </g>
+</svg>
